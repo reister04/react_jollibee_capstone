@@ -133,7 +133,7 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className="flex items-end justify-end col-span-2 sm:items-center">
-                        {(isLoggedIn) ? <p className="text-sm font-semibold me-2 sm:me-3" onClick={handleLogOut}>Log Out</p> : <Link className="me-3 font-semibold relative" to="/login">Sign In</Link> }
+                        {(isLoggedIn) ? <p className="text-sm font-semibold me-2 sm:me-3 cursor-pointer" onClick={handleLogOut}>Log Out</p> : <Link className="me-3 font-semibold relative" to="/login">Sign In</Link> }
                         <Link className="relative" to="/cart">
                             <div className="absolute left-[-10px] top-0 bg-orange-400 rounded-full p-1 w-[20px] h-[20px] flex justify-center items-center">{cart.length}</div>
                             <img src={Cart} alt="" className="h-[30px] w-[30px]" />

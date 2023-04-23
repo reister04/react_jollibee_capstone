@@ -10,7 +10,7 @@ function App() {
     return (
         
         <>
-            <Router>
+            <Router basename="/react_jollibee_capstone" >
                 <Navbar />
                 <Routes>
                         <Route exact path='/' element={< Home />}></Route>
