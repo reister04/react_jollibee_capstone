@@ -19,7 +19,7 @@ const Authentication = () => {
         }
         const loggedInUser = accounts.find(account => account.isLoggedIn);
         if (loggedInUser) {
-            navigate("/home");
+            navigate("/.");
             window.location.reload(false);
         }
     }, [accounts, navigate]);
